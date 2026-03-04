@@ -1,0 +1,1 @@
+export const API_URL = "https://spendwise-api-1-hri6.onrender.com";
