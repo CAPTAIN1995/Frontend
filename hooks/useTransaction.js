@@ -58,7 +58,7 @@ export const useTransactions = ( user_id ) => {
 
         const deleteTransactions = async( id ) => {
             try{
-                const response = awaitfetch(`${ API_URL}/api/transactions/${id}` , {method: "DELETE"});
+                const response = await fetch(`${ API_URL}/api/transactions/${id}` , {method: "DELETE"});
                 if (!response.ok) throw new Error("Faild to delete transaction");
                 //REFRESH data after deletion
                 loadData();

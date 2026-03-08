@@ -43,6 +43,8 @@ const CreateScreen = () => {
       return;
     }
 
+
+
     if (!selectedCategory) return Alert.alert("Error", "Please select a category");
 
     setIsLoading(true);
@@ -52,7 +54,7 @@ const CreateScreen = () => {
         ? -Math.abs(parseFloat(amount))
         : Math.abs(parseFloat(amount));
         // send the data to backend database
-      const response = await fetch(`${API_URL}/transactions`, {
+      const response = await fetch(`${API_URL}/api/transactions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
