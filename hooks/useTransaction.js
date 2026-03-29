@@ -3,6 +3,8 @@ import { useCallback, useState } from "react";
 import { Alert } from "react-native";
 import { API_URL } from "../constants/api";
 
+// api = https://spendwise-api-1-hri6.onrender.com 
+
 
 
 export const useTransactions = ( user_id ) => {
@@ -19,7 +21,9 @@ export const useTransactions = ( user_id ) => {
         async () => {
         try{
             const response = await fetch(`${ API_URL}/api/transactions/${user_id}`);
+            console.log(user_id)
             const data = await response.json();
+            
             
             setTransactions(data);
         }catch(error){
