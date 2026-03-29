@@ -11,7 +11,7 @@ import { Link, useRouter } from "expo-router";
 import { Ionicons} from "@expo/vector-icons";
 import { BalanceCard } from '../../components/BalanceCard';
 import { TransactionItem } from '../../components/TransactionItem';
-import { NoTransactionsFound } from '../../components/NoTransactionsFound';
+import  NoTransactionsFound  from '../../components/NoTransactionsFound';
 
 export default function Page() {
   const { user } = useUser();
@@ -68,6 +68,7 @@ if(isloading && !refreshing) return <PageLoader />;
               <Ionicons name="add" size={20} color="#FFF" />
               <Text style={styles.addButtonText}>Add</Text>
             </TouchableOpacity>
+            <SignOutButton />
 
           </View>
 
