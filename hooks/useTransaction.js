@@ -3,7 +3,7 @@ import { useCallback, useState } from "react";
 import { Alert } from "react-native";
 import { API_URL } from "../constants/api";
 
-// api = https://spendwise-api-1-hri6.onrender.com 
+// api = https://spendwise-api-2.onrender.com
 
 
 

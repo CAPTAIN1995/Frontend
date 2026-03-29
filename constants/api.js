@@ -1,1 +1,1 @@
-export const API_URL = "https://spendwise-api-1-hri6.onrender.com";
+export const API_URL = "https://spendwise-api-2.onrender.com";
