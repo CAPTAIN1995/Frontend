@@ -21,7 +21,6 @@ export const useTransactions = ( user_id ) => {
         async () => {
         try{
             const response = await fetch(`${ API_URL}/api/transactions/${user_id}`);
-            console.log(user_id)
             const data = await response.json();
             
             

@@ -8,41 +8,21 @@
     "scheme": "frontend",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/logogreen.png",
-        "backgroundImage": "./assets/images/logogreen.png",
-        "monochromeImage": "./assets/images/logogreen.png"
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/images/icon_1024.png",
+        "backgroundImage": "./assets/images/icon_1024.png",
+        "monochromeImage": "./assets/images/icon_1024.png"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "edgeToEdgeEnabled": false,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dev_laith.Frontend"
     },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/logogreen.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/logogreen.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+    "extra": {
+      "eas": {
+        "projectId": "1f8d04c3-84c0-44e2-b053-81d8b5ed156d"
+      }
     }
   }
 }

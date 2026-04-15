@@ -40,8 +40,6 @@ const handleDelete = (id) => {
 
 }
 
-console.log("data is loaded");
-
 if(isloading && !refreshing) return <PageLoader />;
 
 
